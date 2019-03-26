@@ -9,9 +9,12 @@ Ethereum DApp development environment
 
 ## Run containers
 
-```bash
-$ docker-compose -f docker-compose.yml up  # Exit by Ctrl+c
 
+```bash
+$ docker-compose -f docker-compose.yml up  # Exit by Ctrl+C
+```
+
+```
 # Running processes in the background
 $ docker-compose -f docker-compose.yml up -d 
 $ docker-compose -f docker-compose.yml down
@@ -21,8 +24,10 @@ $ docker-compose -f docker-compose.yml down
 - ganache-cli
 
 
-## Attach to truffle 
+## Attach to truffle and see wehther the env works 
 
 ```bash
 $ docker exec -it truffle sh
+$ cd hello/
+$ truffle migrate --network dev
 ```

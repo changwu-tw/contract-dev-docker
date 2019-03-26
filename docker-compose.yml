@@ -3,7 +3,7 @@ version: '3'
 services:
   truffle:
     container_name: truffle
-    image: truffle
+    image: changwu/truffle
     volumes:
       - ./workspace:/workspace
     ports:

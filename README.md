@@ -18,7 +18,7 @@ The training environment is set up by using Docker Compose. The setup consists o
 
 ### Linux
 
-```
+```sh
 # Install docker
 $ curl -fsSL https://get.docker.com -o get-docker.sh
 $ sh get-docker.sh
@@ -37,7 +37,7 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 
 ### Verify Installation Success
 
-```
+```sh
 $ docker -v
 Docker version 18.09.2, build 6247962
 $ docker-compose -v
@@ -48,7 +48,7 @@ docker-compose version 1.23.2, build 1110ad01
 
 Clone the git repository for the training environment
 
-```
+```sh
 $ git clone https://github.com/changwu-tw/contract-dev-docker.git
 ```
 
@@ -56,7 +56,7 @@ $ git clone https://github.com/changwu-tw/contract-dev-docker.git
 
 Open a terminal
 
-```bash
+```sh
 $ docker-compose -f docker-compose.yml up
 
 # Exit by Ctrl+C
@@ -64,14 +64,14 @@ $ docker-compose -f docker-compose.yml up
 
 Or run the process in the background
 
-```
+```sh
 $ docker-compose -f docker-compose.yml up -d
 $ docker-compose -f docker-compose.yml down
 ```
 
 ### Attach to truffle and see wehther the env works
 
-```bash
+```sh
 $ docker exec -it truffle sh
 $ cd hello/
 $ truffle migrate --network dev

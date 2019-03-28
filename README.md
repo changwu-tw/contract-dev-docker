@@ -4,8 +4,8 @@ Ethereum DApp development environment
 
 The training environment is set up by using Docker Compose. The setup consists of two containers that run different services.
 
-- truffle
-- ganache-cli
+- [truffle](https://github.com/trufflesuite/truffle)
+- [ganache-cli](https://github.com/trufflesuite/ganache-cli)
 
 ## Requirements
 
